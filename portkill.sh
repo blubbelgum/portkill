@@ -607,10 +607,10 @@ interactive_mode() {
         echo -e "${GREEN}${BOLD}=== Port Kill v$VERSION - Interactive Mode ===${NC}"
         
         if [ "$WATCH_MODE" = true ]; then
-            list_all_ports > /dev/null
+            list_all_ports
             sleep 2
         else
-            list_all_ports > /dev/null
+            list_all_ports
             echo ""
             echo -e "${BLUE}Options:${NC}"
             echo "1. Enter port number(s) to manage"
